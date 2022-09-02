@@ -199,7 +199,7 @@ async def setup(ctx):
     except Exception as e:
         raise e
     try:
-        channel_id = int(bot.channel_id)
+        channel_id = int(client.channel_id)
     except ValueError:
         return await ctx.send("Invalid Channel ID passed")
     except Exception as e:
@@ -218,16 +218,16 @@ async def setup(ctx):
     await message.add_reaction("✅")
     await ctx.send("Setup Successful")
     
-    bot.setup = True
+    client.setup = True
 
-@bot.event
+@client.event
 async def on_raw_reaction_add(payload):
-    if bot.setup != True:
+    if client.setup != True:
         return print(f"Bot is not setuped\nType {prefix}setup to setup the bot")
     
     if payload.message_id == int(bot.message_id):
         if str(payload.emoji) == "✅":
-            guild = bot.get_guild(payload.guild_id)
+            guild = client.get_guild(payload.guild_id)
             if guild is None:
                 return print("Guild Not Found\nTerminating Process")
             try:
@@ -246,12 +246,12 @@ async def on_raw_reaction_add(payload):
 
 @client.event
 async def on_raw_reaction_remove(payload):
-    if bot.setup != True:
+    if client.setup != True:
         return print(f"Bot is not setuped\nType {prefix}setup to setup the bot")
     
-    if payload.message_id == int(bot.message_id):
+    if payload.message_id == int(client.message_id):
         if str(payload.emoji) == "✅":
-            guild = bot.get_guild(payload.guild_id)
+            guild = client.get_guild(payload.guild_id)
             if guild is None:
                 return print("Guild Not Found\nTerminating Process")
             try:
