@@ -43,3 +43,8 @@ class data:
     #blue = 0x011efe
     #purple = 0xfe00f6
         
+class Config:
+    role_name = ""
+    message_id = ""
+    prefix = "."
+    channel_id = ""
