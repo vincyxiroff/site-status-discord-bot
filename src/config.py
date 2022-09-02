@@ -7,7 +7,7 @@ class data:
     probe_timeout = 8
 
     #Channel ID's To Use
-    admin_log_channel_id = 662110077955604481
+    admin_log_channel_id = 1015229097393279067
     public_update_channel_id = 1015220573833539634
 
     #Your URL To Check
