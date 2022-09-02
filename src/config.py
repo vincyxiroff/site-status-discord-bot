@@ -23,7 +23,7 @@ class data:
         exit(0)
 
     #Bots Name To Display
-    bot_name = "DynamicCloud Uptime by vincyilmagnifico#8964"
+    bot_name = "DynamicCloud Status by vincyilmagnifico#8964"
 
     #Thumbnail to display 
     thumbnail_url = "https://host-info.net/img/mag.png"
@@ -44,7 +44,7 @@ class data:
     #purple = 0xfe00f6
         
 class Config:
-    role_name = ""
-    message_id = ""
+    role_name = "members"
+    message_id = "1015229867165503569"
     prefix = "."
-    channel_id = ""
+    channel_id = "1015229754888167426"
