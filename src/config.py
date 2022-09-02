@@ -11,7 +11,7 @@ class data:
     public_update_channel_id = 1015220573833539634
 
     #Your URL To Check
-    my_url = "https://host-info.net"
+    my_url = "https://www.dynamiccloud.ml"
 
     #Your Bots Token - For security reasons, use "token.txt"!!!
     try:
@@ -23,7 +23,7 @@ class data:
         exit(0)
 
     #Bots Name To Display
-    bot_name = "DynamicCloud Uptime by vincyilmagnifico"
+    bot_name = "DynamicCloud Uptime by vincyilmagnifico#8964"
 
     #Thumbnail to display 
     thumbnail_url = "https://host-info.net/img/mag.png"
