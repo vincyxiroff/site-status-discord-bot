@@ -225,13 +225,13 @@ async def on_raw_reaction_add(payload):
     if client.setup != True:
         return print(f"Bot is not setuped\nType {prefix}setup to setup the bot")
     
-    if payload.message_id == int(bot.message_id):
+    if payload.message_id == int(client.message_id):
         if str(payload.emoji) == "✅":
             guild = client.get_guild(payload.guild_id)
             if guild is None:
                 return print("Guild Not Found\nTerminating Process")
             try:
-                role = discord.utils.get(guild.roles, name=bot.role_name)
+                role = discord.utils.get(guild.roles, name=client.role_name)
             except:
                 return print("Role Not Found\nTerminating Process")
             
@@ -255,7 +255,7 @@ async def on_raw_reaction_remove(payload):
             if guild is None:
                 return print("Guild Not Found\nTerminating Process")
             try:
-                role = discord.utils.get(guild.roles, name=bot.role_name)
+                role = discord.utils.get(guild.roles, name=client.role_name)
             except:
                 return print("Role Not Found\nTerminating Process")
             
