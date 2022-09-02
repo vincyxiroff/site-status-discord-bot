@@ -38,7 +38,7 @@ async def on_ready():
                 "\n>Please use valid channel Id's an try again."
                 "\n\nScript will now close on accept."
                 )
-            messagebox.showinfo("Error! | Uptime Monitor", die)
+            messagebox.showinfo("Error! | Made with ♥️ by vincyilmagnifico#8965", die)
             exit()
     else:
         out = f"""
