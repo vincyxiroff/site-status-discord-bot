@@ -8,7 +8,7 @@ class data:
 
     #Channel ID's To Use
     admin_log_channel_id = 662110077955604481
-    public_update_channel_id = 662954482115543050
+    public_update_channel_id = 1015220573833539634
 
     #Your URL To Check
     my_url = "https://host-info.net"
@@ -23,7 +23,7 @@ class data:
         exit(0)
 
     #Bots Name To Display
-    bot_name = "Host-Info Uptime Client"
+    bot_name = "DynamicCloud Uptime by vincyilmagnifico"
 
     #Thumbnail to display 
     thumbnail_url = "https://host-info.net/img/mag.png"
