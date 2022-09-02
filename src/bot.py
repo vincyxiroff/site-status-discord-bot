@@ -1,4 +1,6 @@
+from config import Config
 import discord
+from discord.ext import commands
 from os import name, system
 from time import sleep
 try:
